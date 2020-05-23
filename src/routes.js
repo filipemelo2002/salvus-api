@@ -7,9 +7,9 @@ routes.get("/", (req, res) =>
     greeting: "Hello there",
   })
 );
-routes.get("/patients", PatientController.index);
-routes.get("/patients/:id", PatientController.show);
-routes.put("/patients/:id", PatientController.update);
-routes.delete("/patients/:id", PatientController.destroy);
-routes.post("/patients", PatientController.create);
+routes.get("/api/patients", PatientController.index);
+routes.get("/api/patients/:id", PatientController.show);
+routes.put("/api/patients/:id", PatientController.update);
+routes.delete("/api/patients/:id", PatientController.destroy);
+routes.post("/api/patients", PatientController.create);
 module.exports = routes;
